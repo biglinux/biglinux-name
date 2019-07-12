@@ -15,6 +15,8 @@ case "$1" in
     dpkg-divert --package $package_name --rename --remove /etc/issue.net
     dpkg-divert --package $package_name --rename --remove /etc/lsb-release
     dpkg-divert --package $package_name --rename --remove /etc/legal
+    dpkg-divert --package $package_name --rename --remove /etc/os-release
+
     ;;
   purge)
     ;;

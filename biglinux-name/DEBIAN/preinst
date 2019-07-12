@@ -15,12 +15,9 @@ case "$1" in
     dpkg-divert --package $package_name --divert /etc/issue.distrib --rename /etc/issue
     dpkg-divert --package $package_name --divert /etc/issue.net.distrib --rename /etc/issue.net
     dpkg-divert --package $package_name --divert /etc/lsb-release.distrib --rename /etc/lsb-release
-    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/BigLinux.info
-    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/Kaiana.info
+    dpkg-divert --package $package_name --divert /etc/os-release.distrib --rename /etc/os-release
     ;;
   upgrade)
-    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/BigLinux.info
-    ln  -sf /usr/share/python-apt/templates/Ubuntu.info /usr/share/python-apt/templates/Kaiana.info
     if [ "$(dpkg-divert --list /etc/motd)" = "" ]
         then
 	    dpkg-divert --package $package_name --divert /etc/motd.distrib --rename /etc/motd
@@ -31,11 +28,15 @@ case "$1" in
 	    dpkg-divert --package $package_name --divert /etc/motd.tail.distrib --rename /etc/motd.tail
 	fi
 
+        if [ "$(dpkg-divert --list /etc/os-release)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /etc/os-release.distrib --rename /etc/os-release
+	fi
         if [ "$(dpkg-divert --list /etc/legal)" = "" ]
         then
 	    dpkg-divert --package $package_name --divert /etc/legal.distrib --rename /etc/legal
 	fi
-    ;;
+;;
   abort-upgrade)
     ;;
   *) echo "$0: didn't understand being called with \`$1'" 1>&2
