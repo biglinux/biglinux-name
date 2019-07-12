@@ -2,7 +2,7 @@ Package: biglinux-name
 Version: 7.10-0big2
 Architecture: all
 Maintainer: Bruno Goncalves <www.biglinux.com.br>
-Installed-Size:60
+Installed-Size:52
 Section: admin
 Replaces: base-files
 Priority: optional
