@@ -16,6 +16,7 @@ case "$1" in
     dpkg-divert --package $package_name --divert /etc/issue.net.distrib --rename /etc/issue.net
     dpkg-divert --package $package_name --divert /etc/lsb-release.distrib --rename /etc/lsb-release
     dpkg-divert --package $package_name --divert /etc/os-release.distrib --rename /etc/os-release
+    dpkg-divert --package $package_name --divert /usr/lib/os-release.distrib --rename /usr/lib/os-release
     ;;
   upgrade)
     if [ "$(dpkg-divert --list /etc/motd)" = "" ]
@@ -32,6 +33,12 @@ case "$1" in
         then
 	    dpkg-divert --package $package_name --divert /etc/os-release.distrib --rename /etc/os-release
 	fi
+
+        if [ "$(dpkg-divert --list /usr/lib/os-release)" = "" ]
+        then
+	    dpkg-divert --package $package_name --divert /usr/lib/os-release.distrib --rename /usr/lib/os-release
+	fi
+
         if [ "$(dpkg-divert --list /etc/legal)" = "" ]
         then
 	    dpkg-divert --package $package_name --divert /etc/legal.distrib --rename /etc/legal

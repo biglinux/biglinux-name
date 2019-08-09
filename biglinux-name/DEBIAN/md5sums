@@ -1,8 +1,7 @@
-a78c1d29bb24e9c36f29c692a7cb8179  DEBIAN/control
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
-14e3c05eb0a4b247d21cf637ee7e1ad3  DEBIAN/postrm
-eeb5ae5313d4db7c81d09e56645f7dd6  DEBIAN/preinst
-f25940ae7f8369ec21c2290f9ed6b2a5  DEBIAN/.control.kate-swp
+f5adf8643120fb1d92c328c30e31cbf1  DEBIAN/control
+3d35387a51412d43540334eb05bfab2b  DEBIAN/postrm
+5fe09847fd98f469cf18b6086ba23a08  DEBIAN/preinst
 f8ef88e35e2096c24331027fa12b9cb6  etc/issue
 c1fcbaa79e02c313a428fdfc6abcafc1  etc/issue.net
 d784fa8b6d98d27699781bd9a7cf19f0  etc/legal
@@ -11,3 +10,4 @@ d784fa8b6d98d27699781bd9a7cf19f0  etc/legal
 563082cd6df96fe764f79cfa3338dd31  etc/motd.tail
 7c39972cd6eb3afd07b374cf3668d05d  etc/update-motd.d/10-help-text
 d359f0b5e56537b38394d2411bbe6454  etc/os-release
+d359f0b5e56537b38394d2411bbe6454  usr/lib/os-release
