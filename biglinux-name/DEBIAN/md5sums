@@ -1,11 +1,11 @@
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
 3d35387a51412d43540334eb05bfab2b  DEBIAN/postrm
 5fe09847fd98f469cf18b6086ba23a08  DEBIAN/preinst
-de11616c1677fb13aeea0758faa38cd7  DEBIAN/control
+dabb84cd708d9c421d9e7db200dc3c96  DEBIAN/control
 f8ef88e35e2096c24331027fa12b9cb6  etc/issue
 c1fcbaa79e02c313a428fdfc6abcafc1  etc/issue.net
 d784fa8b6d98d27699781bd9a7cf19f0  etc/legal
-722d9a226a17755d6689d9684c976072  etc/lsb-release
+24dc223e5c050934767c63e0ac7f4c7c  etc/lsb-release
 563082cd6df96fe764f79cfa3338dd31  etc/motd
 563082cd6df96fe764f79cfa3338dd31  etc/motd.tail
 7c39972cd6eb3afd07b374cf3668d05d  etc/update-motd.d/10-help-text
