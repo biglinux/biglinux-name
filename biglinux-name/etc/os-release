@@ -1,6 +1,6 @@
 NAME="BigLinux based in Ubuntu"
 VERSION="20.04 (Focal)"
-ID=BigLinux
+ID=ubuntu
 ID_LIKE=ubuntu
 PRETTY_NAME="BigLinux based in Ubuntu 20.04"
 VERSION_ID="20.04"
