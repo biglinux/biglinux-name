@@ -1,0 +1,15 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = filesystem
+Target = lsb-release
+Target = biglinux-name
+Target = grub
+Target = grub-btrfs
+Target = manjaro-release
+
+[Action]
+Description = BigLinux Name
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/biglinux-name

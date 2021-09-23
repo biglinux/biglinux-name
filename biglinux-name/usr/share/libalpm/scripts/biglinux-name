@@ -1,0 +1,11 @@
+#!/bin/sh
+
+sed -i 's|^Manjaro Linux|BigLinux, based in Manjaro Linux|g' /etc/issue
+
+sed -i 's|^ *\bNAME\b *=.*|NAME="BigLinux based in Manjaro Linux"|;s|^ *\PRETTY_NAME\b *=.*|PRETTY_NAME="BigLinux based in Manjaro Linux"|;s|^ *\HOME_URL\b *=.*|HOME_URL="https://www.biglinux.com.br"|;s|^ *\DOCUMENTATION_URL\b *=.*|DOCUMENTATION_URL="https://manual.biglinux.com.br"|;s|^ *\SUPPORT_URL\b *=.*|SUPPORT_URL="https://forum.biglinux.com.br"|;s|^ *\BUG_REPORT_URL\b *=.*|BUG_REPORT_URL="https://forum.biglinux.com.br"|;s|^ *\LOGO\b *=.*|LOGO="biglinux-blue"|' /usr/lib/os-release
+
+sed -i 's|^ *\bDISTRIB_ID\b *=.*|DISTRIB_ID="BigLinux based in Manjaro Linux"|g;s|^ *\bDISTRIB_DESCRIPTION\b *=.*|DISTRIB_DESCRIPTION="BigLinux"|g' /etc/lsb-release
+
+sed -i 's|#GRUB_BTRFS_SUBMENUNAME=.*|GRUB_BTRFS_SUBMENUNAME="Snapshots"|g' /etc/default/grub-btrfs/config
+
+sed -i 's|OS="${GRUB_DISTRIBUTOR} Linux"|OS="${GRUB_DISTRIBUTOR}"|g' /etc/grub.d/10_linux
