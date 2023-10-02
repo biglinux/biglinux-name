@@ -2,7 +2,7 @@
 
 sed -i 's|^Manjaro Linux|BigLinux, based in Manjaro Linux|g' /etc/issue
 
-sed 's|^ *\bNAME\b *=.*|NAME="BigLinux based in Manjaro Linux"|;s|^ *\bPRETTY_NAME\b *=.*|PRETTY_NAME="BigLinux based in Manjaro Linux"|;s|^ *\bHOME_URL\b *=.*|HOME_URL="https://www.biglinux.com.br"|;s|^ *\bDOCUMENTATION_URL\b *=.*|DOCUMENTATION_URL="https://manual.biglinux.com.br"|;s|^ *\bSUPPORT_URL\b *=.*|SUPPORT_URL="https://forum.biglinux.com.br"|;s|^ *\LOGO\b *=.*|LOGO="biglinux-blue"|;s|^ *\ID\b *=.*|ID="biglinux"|;s|^ *\bBUG_REPORT_URL\b *=.*|BUG_REPORT_URL="https://github.com/biglinux"|;s|^ *\bPRIVACY_POLICY_URL=.*||' /usr/lib/os-release
+sed -i 's|^ *\bNAME\b *=.*|NAME="BigLinux based in Manjaro Linux"|;s|^ *\bPRETTY_NAME\b *=.*|PRETTY_NAME="BigLinux based in Manjaro Linux"|;s|^ *\bHOME_URL\b *=.*|HOME_URL="https://www.biglinux.com.br"|;s|^ *\bDOCUMENTATION_URL\b *=.*|DOCUMENTATION_URL="https://manual.biglinux.com.br"|;s|^ *\bSUPPORT_URL\b *=.*|SUPPORT_URL="https://forum.biglinux.com.br"|;s|^ *\LOGO\b *=.*|LOGO="biglinux-blue"|;s|^ *\ID\b *=.*|ID="biglinux"|;s|^ *\bBUG_REPORT_URL\b *=.*|BUG_REPORT_URL="https://github.com/biglinux"|;s|^ *\bPRIVACY_POLICY_URL=.*||' /usr/lib/os-release
 
 sed -i 's|^ *\bDISTRIB_ID\b *=.*|DISTRIB_ID="BigLinux based in Manjaro Linux"|g;s|^ *\bDISTRIB_DESCRIPTION\b *=.*|DISTRIB_DESCRIPTION="BigLinux"|g' /etc/lsb-release
 
