@@ -2,7 +2,7 @@
 
 pkgname=biglinux-name
 pkgdesc="Configure system name"
-depends=('pipewire')
+# depends=('')
 # makedepends=('')
 # conflicts=('')
 pkgver=$(date +%y.%m.%d)
